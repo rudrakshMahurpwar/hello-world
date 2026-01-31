@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-size: 100px;
+    color: aliceblue;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: 1s background-color;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.split {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.split.left {
+    position: absolute;
+    left: 0;
+    background-color: pink;
+    background: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-compare-iphone-17-pro-202509?wid=400&hei=512&fmt=jpeg&qlt=90&.v=M0dlUVBobHVpY1h1dmlaR3RZekpEMi9sbCsxVVJmYjNiS29STjQrZEV5NnNlL1VpWDFHcHBMQXVUWWdWdkZZNEk4YjFEWjhuZXFwNUlmRWZZRFVkVmtQN0dKS3RDVnJRc1haUzhoeEN5eEpWcnBaYlhkL0dOd2g3cENJOVZNejQ");
+    background-size: cover;
+}
+
+.split.right {
+    position: absolute;
+    right: 0;
+    background-color: lightblue;
+    background: url("https://images.samsung.com/is/image/samsung/p6pim/in/2501/gallery/in-galaxy-s25-s938-sm-s938bakbins-thumb-544702670?$Q90_330_330_F_PNG$");
+    background-size: cover;
+}
+
+
+.active-left {
+    width: 75%;
+}
+
+.active-left .right {
+    width: 25%;
+}
+
+.active-right {
+    width: 75%;
+}
+
+.active-right .left {
+    width: 25%;
+}
+
+.left,
+.right {
+    transition: width 2s ease-in-out;
+}
+
+.left,
+.right {
+    transition: width 2s ease-in-out;
+}
