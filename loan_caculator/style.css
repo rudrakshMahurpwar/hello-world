@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: darkcyan;
+    color: aliceblue;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.input {
+    width: 100%;
+    font-size: 20px;
+    height: 30px;
+    color: rgb(50, 50, 50);
+
+}
+
+.payment {
+    font-weight: 600;
+    font-size: 20px;
+}
